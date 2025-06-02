@@ -19,7 +19,7 @@ def gear_callback(ch, method, properties, body):
 
     print(f"Starting producing <{gear_name}> for team <{team_name}>, it will take {tc}s")
 
-    #time.sleep(tc)
+    time.sleep(tc)
 
     print(f"Produced <{gear_name}> for team <{team_name}>")
     ch.basic_ack(delivery_tag=method.delivery_tag)
